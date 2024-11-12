@@ -1,8 +1,11 @@
 # app.rb
 require 'webrick'
 
+# Usa el puerto asignado por el entorno (Render lo pasará como una variable de entorno)
+port = ENV['PORT'] || 4567  # Usa PORT de la variable de entorno o 4567 por defecto
+
 # Crea el servidor HTTP
-server = WEBrick::HTTPServer.new :Port => ENV['PORT'] || 4567
+server = WEBrick::HTTPServer.new :Port => port
 
 # Define una ruta para la raíz "/"
 server.mount_proc '/' do |req, res|
