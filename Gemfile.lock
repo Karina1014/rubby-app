@@ -5,6 +5,10 @@ GEM
     sinatra (3.0.5)
       rack (~> 2.2)
 
+PLATFORMS
+  ruby
+  x86_64-linux
+
 DEPENDENCIES
   rack
   sinatra
