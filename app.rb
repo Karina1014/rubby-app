@@ -1,6 +1,5 @@
-# app.rb
 require 'sinatra'
 
 get '/' do
-  erb :index
+  "Hello, world!"
 end
